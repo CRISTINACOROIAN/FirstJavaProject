@@ -19,18 +19,22 @@ public class Main {
         long myThirdLong = myLong + mySecondLong * 6;
         System.out.println(myThirdLong);
 
-         int m1,m2,m3,m4,tot;
-         m1 = 20;
+         float m1,m2,m3,m4,tot;
+         m1 = 20f;
          m2 = -3;
          m3 = 5;
          m4 = 8;
          tot = m1 + m2 * m3 / m4;
          System.out.println(tot);
 
-
-
-
-
+         float a,b,c,d,e,total;
+         a= 5f;
+         b= 15;
+         c= 3;
+         d= 2;
+         e= 8;
+         total=a+b/c*d-e%c;
+         System.out.println(total);
 
     }
 
