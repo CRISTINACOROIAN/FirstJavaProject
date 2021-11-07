@@ -36,10 +36,13 @@ public class Main {
          total=a+b/c*d-e%c;
          System.out.println(total);
 
+
+        printMyName();
     }
 
-
-
+    private static void printMyName() {
+        System.out.println("Hello \n Cristina");
+    }
 
 
 }
