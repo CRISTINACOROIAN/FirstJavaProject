@@ -37,5 +37,21 @@ public class AppMain {
         System.out.println(chica.heightInCm);
         System.out.println(chica.age);
         System.out.println(chica.weight);
+
+        Veterinary vet = new Veterinary();
+        vet.name = "Liam";
+        vet.nationality ="Chinese";
+        vet.colorOfHair ="Black";
+        vet.colorSkin = "Yellow";
+        vet.heightInCm = 170;
+        vet.age = 30;
+        vet.weight = 80;
+        System.out.println(vet.name);
+        System.out.println(vet.nationality);
+        System.out.println(vet.colorOfHair);
+        System.out.println(vet.colorSkin);
+        System.out.println(vet.heightInCm);
+        System.out.println(vet.age);
+        System.out.println(vet.weight);
     }
 }
