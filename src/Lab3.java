@@ -22,5 +22,11 @@ public class Lab3 {
         System.out.println(op.verifyProvidedText(text, number));
 
 
+        System.out.println(op.checkText("Learning text comparison","Got to try some more"));
+
+        int cm = 4;
+        System.out.println(op.orCondition(cm));
     }
+
+
 }

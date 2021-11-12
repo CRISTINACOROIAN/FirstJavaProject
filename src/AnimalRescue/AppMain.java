@@ -3,24 +3,26 @@ package AnimalRescue;
 public class AppMain {
     public static void main(String[] args) {
         Dog rex = new Dog();
-        rex.name = "Rex";
-        rex.breed = "Labrador";
+        rex.setName("Rex");
+        rex.setBreed ("Labrador");
+        String breed =rex.getBreed();
         rex.age = 1;
-        System.out.println(rex.name);
-        System.out.println(rex.breed);
+        System.out.println(rex.getName());
+        System.out.println(rex.getBreed());
         System.out.println(rex.age);
         rex.play();
-        rex.name = "Blackie";
-        System.out.println(rex.name);
+        rex.setName("Blackie");
+        System.out.println(rex.getName());
 
         Dog freddie = new Dog();
-        freddie.name = "Freddie";
-        System.out.println(freddie.name);
+        freddie.setName("Freddie");
+        System.out.println(freddie.getName());
+
 
 
         Dog max = new Dog();
-        max.breed = "Bulldog";
-        System.out.println(max.breed);
+        max.setName("Max");
+        System.out.println(max.getName());
 
         Girl chica = new Girl();
         chica.name = "Sara";
