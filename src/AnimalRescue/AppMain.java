@@ -25,15 +25,15 @@ public class AppMain {
         System.out.println(max.getName());
 
         Girl chica = new Girl();
-        chica.name = "Sara";
-        chica.nationality ="American";
+        chica.setName("Sara");
+        chica.setNationality("American");
         chica.colorOfHair ="Blonde";
         chica.colorSkin = "White";
         chica.heightInCm = 120;
         chica.age = 10;
         chica.weight = 35;
-        System.out.println(chica.name);
-        System.out.println(chica.nationality);
+        System.out.println(chica.getName());
+        System.out.println(chica.getNationality());
         System.out.println(chica.colorOfHair);
         System.out.println(chica.colorSkin);
         System.out.println(chica.heightInCm);
