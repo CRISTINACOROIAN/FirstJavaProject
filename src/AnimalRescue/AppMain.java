@@ -24,6 +24,10 @@ public class AppMain {
         max.setName("Max");
         System.out.println(max.getName());
 
+
+        Persian tommy = new Persian();
+        tommy.setName("Tommy");
+
         Girl chica = new Girl();
         chica.setName("Sara");
         chica.setNationality("American");

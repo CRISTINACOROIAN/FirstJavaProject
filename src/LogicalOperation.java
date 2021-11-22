@@ -60,6 +60,48 @@ public class LogicalOperation {
         }
         return sum/count;
     }
+    public int[] populateArray(int max){
+        int[] myArr = new int[max];
+        for (int i = 0; i < max; i++){
+            myArr[i] = i+1;
+        }
+        return myArr;
+    }
+
+    public void printArray(int[] array){
+        for (int i = 0; i < array.length; i++){
+            System.out.println(array[i]);
+        }
+    }
+    public void printArray(String[] array){
+        for (int i = 0; i < array.length; i++){
+            System.out.println(array[i]);
+        }
+    }
+
+    public static void printArray(Dog[] array){
+        for (int i = 0; i < array.length; i++){
+            System.out.println(array[i].getName());
+        }
+    }
+
+    public float getAverageValueFromArray(int[] array){
+        float sum = 0;
+
+        for (int i = 0; i < array.length; i++){
+            sum = sum + array[i];
+        }
+        return(sum/array.length);
+    }
+
+    public boolean isValueInArray(int[] array, int value){
+        for (int i = 0; i < array.length; i++){
+            if (array[i] == value){
+                return true;
+            }
+        }
+        return false;
+    }
 
 
 }

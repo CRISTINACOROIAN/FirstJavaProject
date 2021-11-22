@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class Dog {
+public class Dog extends Animal {
     private String breed ;
     byte age ;
     float weight ;
@@ -39,4 +39,8 @@ public class Dog {
     public void play(){
         System.out.println("Playing fetch...");
     }
+    public void wavingTail(){
+        System.out.println("da din coada");
+    }
+
 }
