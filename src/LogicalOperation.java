@@ -1,3 +1,8 @@
+import AnimalRescue.Dog;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class LogicalOperation {
     public int getHigherNumber(int first, int second) {
         if (first < second) {
@@ -138,7 +143,7 @@ public class LogicalOperation {
         }
 
     }
-    public void countBetween(int a, int b) {
+    public void countBetweenB(int a, int b) {
 
         if(a < b){
 
@@ -158,7 +163,7 @@ public class LogicalOperation {
 
         }else{
 
-            System.out.println("Numbers are equal"!);
+            System.out.println("Numbers are equal");
 
         }
 
@@ -259,7 +264,7 @@ public class LogicalOperation {
 
     }
 
-    public void countBetweenWhile(int firstNumber, int secondNumber) {
+    public void countBetweenWhileC(int firstNumber, int secondNumber) {
 
         if(firstNumber < secondNumber){
 
@@ -461,6 +466,105 @@ public class LogicalOperation {
         }
 
     }
+
+    public List<Integer> getPopulatedList(int max){
+        List<Integer> myList = new ArrayList<>();
+        for (int i = 1; i <= max; i++){
+            myList.add(i);
+        }
+        return myList;
+    }
+
+    public void printListFromNumber(List<Integer> myList, int number){
+        for (int i = number; i <= myList.size(); i++){
+            System.out.println(myList.get(i-1));
+        }
+    }
+    public void getArrayToHundred() {
+        int[] myArray = new int[100];
+        for (int i = 1; i <= 100; i++) {
+            myArray[i - 1] = i;
+            System.out.println(myArray[i-1]);
+        }
+
+    }
+    public int[] getEvenArrayToHundred(int[] evenArray) {
+
+        int j = 0;
+        for (int i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                evenArray[j] = i;
+                j++;
+            }
+        }
+        return evenArray;
+
+    }
+    public float getAverageArray(int[] myArray) {
+        float sum = 0;
+        for (int i = 0; i < myArray.length; i++) {
+            sum += myArray[i];
+        }
+        return (sum / myArray.length);
+    }
+    public boolean checkInArray(String[] arrString, String input) {
+        for (int i = 0; i < arrString.length; i++) {
+            if (arrString[i].equals(input)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    public int getPositionInArray(int[] Numbers, int nr) {
+        for (int i = 0; i < Numbers.length; i++) {
+            if (Numbers[i] == nr) {
+                return i;
+            }
+        }
+        return 0;
+    }
+    public void drawLines() {
+        char[] line = {'-', '-', '-', '-', '-', '-', '-', '-', '-', '-',};
+        for (int i = 0; i <= 10; i++) {
+            System.out.println(line);
+        }
+
+    }
+    public int[] removeNrFromArray(int[] myArray, int nr) {
+        int[] secondArray = new int[myArray.length];
+        int j = 0;
+        for (int i = 0; i < myArray.length; i++) {
+            if (myArray[i] == nr)
+                continue;
+            secondArray[j++] = myArray[i];
+        }
+        int[] finArray = new int[j];
+        for (int i = 0; i < j; i++)
+            finArray[i] = secondArray[i];
+        return finArray;
+    }
+    public int getSecondSmallestNrInArray(int[] myArray) {
+        int temporary = 0;
+        for(int i = 0; i< myArray.length;i++){
+            for(int j = i + 1;j<myArray.length;j++){
+                if(myArray[i] > myArray[j]){
+                    temporary = myArray[j];
+                    myArray[j] = myArray[i];
+                    myArray[i] = temporary;
+                }
+            }
+        }
+        return myArray[1];
+    }
+
+    public int[] copyArray(int[] firstArray, int[] emptyArray) {
+        for (int i = 0, j = 0; i < firstArray.length; i++) {
+            emptyArray[j] = firstArray[i];
+            j++;
+        }
+        return emptyArray;
+    }
+
 }
 
 

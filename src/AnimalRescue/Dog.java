@@ -39,8 +39,6 @@ public class Dog extends Animal {
     public void play(){
         System.out.println("Playing fetch...");
     }
-    public void wavingTail(){
-        System.out.println("da din coada");
-    }
+    public void wavingTail(){ System.out.println("da din coada"); }
 
 }

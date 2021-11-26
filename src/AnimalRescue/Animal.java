@@ -31,13 +31,9 @@ public class Animal {
         this.heightInCm = heightInCm;
     }
 
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+
+    public void setName(String name) { this.name = name; }
 
     public String getColor() {
         return color;
